@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_calendar/contact.dart';
-import 'calendar.dart';
+import 'welcome.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Calendar',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Welcome(),
     );
   }
 }
-
